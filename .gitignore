@@ -5,6 +5,13 @@
 target/
 bin/
 
+# IDE configuration files
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

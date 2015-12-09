@@ -8,8 +8,9 @@
     <artifactId>java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-    </properties>
+    <scm>
+        <developerConnection>scm:git:https://github.com/SwiftSMS/Desktop.git</developerConnection>
+    </scm>
 
     <dependencies>
         <!-- My dependencies -->
@@ -71,6 +72,11 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
         </plugins>
     </build>
