@@ -1,15 +1,15 @@
 package com.swift.java.service;
 
-import com.swift.io.net.Operator;
 import com.swift.java.dao.AccountDao;
 import com.swift.java.dao.SettingsDao;
-import com.swift.model.Account;
-import com.swift.model.Network;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.swiftsms.io.net.Operator;
+import org.swiftsms.model.Account;
+import org.swiftsms.model.Network;
 
 import java.util.ArrayList;
 import java.util.List;

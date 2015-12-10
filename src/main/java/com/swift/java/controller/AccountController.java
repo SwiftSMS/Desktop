@@ -1,8 +1,8 @@
 package com.swift.java.controller;
 
 import com.swift.java.service.AccountService;
-import com.swift.model.Account;
-import com.swift.model.Network;
+import org.swiftsms.model.Account;
+import org.swiftsms.model.Network;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

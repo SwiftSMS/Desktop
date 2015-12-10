@@ -12,6 +12,20 @@
         <developerConnection>scm:git:https://github.com/SwiftSMS/Desktop.git</developerConnection>
     </scm>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <url>http://repository.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <!-- My dependencies -->
         <dependency>
@@ -20,9 +34,9 @@
             <version>3.0.0.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>com.swift</groupId>
+            <groupId>org.swiftsms</groupId>
             <artifactId>common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.37-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -48,6 +62,12 @@
         </dependency>
 
         <!-- Test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
