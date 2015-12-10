@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swift.java.controller.ComposeController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.swiftsms.desktop.controller.ComposeController">
     <children>
         <TextField fx:id="uiRecipients" promptText="Recipients..." />
         <TextArea fx:id="uiMessage" prefHeight="300.0" prefWidth="400.0" promptText="Message..." wrapText="true" GridPane.rowIndex="1" />

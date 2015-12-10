@@ -1,4 +1,4 @@
-package com.swift.java.model;
+package org.swiftsms.desktop.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

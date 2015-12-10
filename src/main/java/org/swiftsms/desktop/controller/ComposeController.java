@@ -1,6 +1,6 @@
-package com.swift.java.controller;
+package org.swiftsms.desktop.controller;
 
-import com.swift.java.service.AccountService;
+import org.swiftsms.desktop.service.AccountService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;

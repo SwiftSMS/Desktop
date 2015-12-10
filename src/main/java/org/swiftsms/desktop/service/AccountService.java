@@ -1,7 +1,7 @@
-package com.swift.java.service;
+package org.swiftsms.desktop.service;
 
-import com.swift.java.dao.AccountDao;
-import com.swift.java.dao.SettingsDao;
+import org.swiftsms.desktop.dao.AccountDao;
+import org.swiftsms.desktop.dao.SettingsDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.swiftsms.io.net.Operator;

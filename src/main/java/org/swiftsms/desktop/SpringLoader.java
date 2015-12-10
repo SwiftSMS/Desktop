@@ -1,4 +1,4 @@
-package com.swift.java;
+package org.swiftsms.desktop;
 
 import javafx.util.Callback;
 import org.springframework.context.ApplicationContext;

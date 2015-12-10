@@ -10,7 +10,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.swift.model">
+<hibernate-mapping package="org.swiftsms.model">
 
     <class name="Account" table="accounts">
         <id name="id" column="id" type="int">
@@ -21,7 +21,7 @@
         <property name="password" type="string" column="password" />
         <property name="mobileNumber" type="string" column="number" />
 
-        <property name="operator" column="operator" type="com.swift.model.Network" />
+        <property name="operator" column="operator" type="org.swiftsms.model.Network" />
     </class>
 
 </hibernate-mapping>

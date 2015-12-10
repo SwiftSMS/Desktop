@@ -1,6 +1,6 @@
-package com.swift.java.controller;
+package org.swiftsms.desktop.controller;
 
-import com.swift.java.service.AccountService;
+import org.swiftsms.desktop.service.AccountService;
 import org.swiftsms.model.Account;
 import org.swiftsms.model.Network;
 import javafx.collections.FXCollections;

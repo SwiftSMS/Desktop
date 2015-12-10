@@ -1,4 +1,4 @@
-package com.swift.java.dao;
+package org.swiftsms.desktop.dao;
 
 import org.swiftsms.model.Account;
 import org.hibernate.Query;

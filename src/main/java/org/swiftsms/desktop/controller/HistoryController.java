@@ -1,4 +1,4 @@
-package com.swift.java.controller;
+package org.swiftsms.desktop.controller;
 
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;

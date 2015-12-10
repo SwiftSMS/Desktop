@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swift.java.controller.AccountController">
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.swiftsms.desktop.controller.AccountController">
     <children>
         <Label text="Operator" />
         <ChoiceBox fx:id="uiOperator" prefWidth="150.0" GridPane.columnIndex="1" />

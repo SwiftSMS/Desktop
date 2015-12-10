@@ -1,4 +1,4 @@
-package com.swift.java;
+package org.swiftsms.desktop;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;

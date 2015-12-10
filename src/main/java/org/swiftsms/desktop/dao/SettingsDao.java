@@ -1,6 +1,6 @@
-package com.swift.java.dao;
+package org.swiftsms.desktop.dao;
 
-import com.swift.java.model.Settings;
+import org.swiftsms.desktop.model.Settings;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
