@@ -26,8 +26,10 @@ public class ApplicationGUI extends Application {
         final Callback<Class<?>, Object> factory = new SpringLoader(context);
         final Parent root = FXMLLoader.load(resource, null, null, factory);
 
+        primaryStage.setScene(new Scene(root, 900, 550));
         primaryStage.setTitle("SwiftSMS");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setMinHeight(550);
+        primaryStage.setMinWidth(900);
         primaryStage.show();
     }
 

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <?import javafx.scene.control.*?>
 
 <TabPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.swiftsms.desktop.controller.MainController">
     <tabs>
         <Tab closable="false" text="Compose">
             <content>
-                <fx:include source="compose.fxml" />
+                <fx:include source="inbox.fxml" />
             </content>
         </Tab>
         <Tab closable="false" text="Account">
             <content>
                 <fx:include source="account.fxml" />
             </content>
-        </Tab>
-        <Tab closable="false" text="History">
-           <content>
-               <fx:include source="history.fxml" />
-           </content>
         </Tab>
     </tabs>
 </TabPane>
