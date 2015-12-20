@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
-           dividerPositions="0.5">
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
 
     <items>
         <fx:include minWidth="350.0" source="history.fxml" SplitPane.resizableWithParent="false"/>
 
         <SplitPane dividerPositions="0.8" layoutX="350.0" minWidth="550.0" orientation="VERTICAL">
             <items>
-                <fx:include minHeight="100.0" source="compose.fxml"/>
-
-                <AnchorPane minHeight="100.0"/>
+                <fx:include minHeight="300.0" source="conversation.fxml"/>
+                <fx:include minHeight="100.0" source="compose.fxml" SplitPane.resizableWithParent="false"/>
             </items>
         </SplitPane>
     </items>
