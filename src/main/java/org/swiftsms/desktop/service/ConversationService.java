@@ -1,17 +1,21 @@
 package org.swiftsms.desktop.service;
 
 import org.springframework.stereotype.Service;
+import org.swiftsms.model.Contact;
 
 @Service
 public class ConversationService {
 
-    private String recipient;
+    private Contact recipient;
 
     public String getRecipientNumber() {
-        return recipient;
+        return recipient.getNumber();
     }
 
     public void setRecipient(final String recipient) {
-        this.recipient = recipient;
+        if (this.recipient == null) {
+            this.recipient = new Contact(recipient, "Name", "Last");
+        }
+        this.recipient.setNumber(recipient);
     }
 }

@@ -34,6 +34,8 @@
 
         <!-- Names the annotated entity class -->
         <mapping resource="mappings/Account.hbm.xml" />
+        <mapping resource="mappings/Message.hbm.xml" />
+        <mapping resource="mappings/Contact.hbm.xml" />
         <mapping class="org.swiftsms.desktop.model.Settings" />
     </session-factory>
 </hibernate-configuration>
