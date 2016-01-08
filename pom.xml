@@ -4,7 +4,7 @@
 
     <groupId>org.swiftsms</groupId>
     <artifactId>desktop</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4</version>
 
     <name>SwiftSMS desktop application</name>
     <description>A multi-platform desktop client for SwiftSMS written in Java.</description>
@@ -14,7 +14,7 @@
         <url>https://github.com/SwiftSMS/Desktop.git</url>
         <connection>scm:git:https://github.com/SwiftSMS/Desktop.git</connection>
         <developerConnection>scm:git:https://github.com/SwiftSMS/Desktop.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>desktop-0.0.4</tag>
   </scm>
 
     <licenses>
