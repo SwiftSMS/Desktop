@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.swiftsms.model.Contact;
 import org.swiftsms.model.Message;
 
 import java.util.List;
@@ -15,12 +16,12 @@ public class MessageDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    public List<Message> getHistory() {
+    public List<Contact> getHistory() {
         final Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        final Query getAllQuery = session.createQuery("SELECT DISTINCT message.recipients FROM Message message"); // where number = ?
-        final List<Message> value = getAllQuery.list();
+        final Query getAllQuery = session.createQuery("SELECT DISTINCT m.recipients FROM Message m"); // where number = ?
+        final List<Contact> value = getAllQuery.list();
 
         session.getTransaction().commit();
         session.close();
@@ -28,11 +29,12 @@ public class MessageDao {
         return value;
     }
 
-    public List<Message> getConversation(final String number) {
+    public List<Message> getConversation(final Contact recipient) {
         final Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        final Query getAllQuery = session.createQuery("from Message"); // where number = ?
+        final Query getAllQuery = session.createQuery("SELECT m FROM Message m INNER JOIN m.recipients r WHERE r.number IN (?)"); // where number = ?
+        getAllQuery.setString(0, recipient.getNumber());
         final List<Message> value = getAllQuery.list();
 
         session.getTransaction().commit();

@@ -12,6 +12,10 @@ public class ConversationService {
         return recipient.getNumber();
     }
 
+    public Contact getRecipient() {
+        return recipient;
+    }
+
     public void setRecipient(final String recipient) {
         if (this.recipient == null) {
             this.recipient = new Contact(recipient, "Name", "Last");
