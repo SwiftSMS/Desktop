@@ -1,7 +1,5 @@
 package org.swiftsms.desktop.controller;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -30,14 +28,11 @@ public class HistoryController implements Initializable {
 
     @Override
     public void initialize(final URL location, final ResourceBundle resources) {
-        final List<Contact> contacts = messageDao.getHistory();
+        final List<Contact> contacts = messageDao.getRecentContacts();
         uiHistory.setItems(FXCollections.observableArrayList(contacts));
 
-        uiHistory.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
-            @Override
-            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                conversationService.setRecipient(((Contact) newValue).getNumber());
-            }
+        uiHistory.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            conversationService.setRecipient(((Contact) newValue).getNumber());
         });
 
         uiHistory.getSelectionModel().select(0);

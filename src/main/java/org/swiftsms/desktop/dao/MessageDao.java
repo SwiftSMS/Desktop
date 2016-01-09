@@ -16,7 +16,7 @@ public class MessageDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    public List<Contact> getHistory() {
+    public List<Contact> getRecentContacts() {
         final Session session = sessionFactory.openSession();
         session.beginTransaction();
 
